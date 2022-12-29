@@ -1,5 +1,7 @@
 
 # Store Point of Sale
+![GitHub all releases](https://img.shields.io/github/downloads/drkNsubuga/electron-pos/total) ![GitHub repo size](https://img.shields.io/github/repo-size/drkNsubuga/electron-pos) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/drkNsubuga/electron-pos/.github/workflows/build.yml) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/drkNsubuga/electron-pos) ![GitHub](https://img.shields.io/github/license/drkNsubuga/electron-pos)
+
  Desktop Point of Sale app built with electron
  
   **Features:**
