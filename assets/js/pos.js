@@ -214,7 +214,6 @@ if (auth == undefined) {
                 loadProductList();
                 let delay = 0;
                 allProducts.forEach(product => {
-
                     let todayDate = Date.now();
                     let expDate = moment(product.expirationDate, "DD-MM-YYYY");
                     const diffTime = Math.abs(expDate - todayDate);
@@ -329,6 +328,7 @@ if (auth == undefined) {
             e.preventDefault();
             $("#basic-addon2").empty();
             $("#basic-addon2").append(
+                
                 $('<i>', { class: 'fa fa-spinner fa-spin' })
             );
 
