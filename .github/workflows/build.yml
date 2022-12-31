@@ -1,8 +1,6 @@
 name: Build/release
 
 on: push
-  tags:
-    - 'v*'
 
 jobs:
   release:
@@ -21,7 +19,7 @@ jobs:
         with:
           node-version: 18
 
-       - name: install dependencies
+      - name: install dependencies
         run: npm install
         
       - name: build
