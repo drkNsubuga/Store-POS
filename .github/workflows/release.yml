@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: "18.x"
 
-       - name: install dependencies
+      - name: Install dependencies
         run: npm install
         
       - name: publish
