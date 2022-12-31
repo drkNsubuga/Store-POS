@@ -1,8 +1,8 @@
 {
-  "name": "POS",
+  "name": "Electron-POS",
   "version": "1.0.0",
   "description": "Electron Point of Sale",
-  "author": "Hosting Domain",
+  "author": "Nsubuga Derrick",
   "private": true,
   "main": "start.js",
   "build": {
@@ -11,12 +11,14 @@
       "buildResources": "assets"
     }
   },
+ 
   "dependencies": {
     "@electron/remote": "^2.0.9",
     "async": "^3.2.4",
     "body-parser": "^1.20.1",
     "btoa": "^1.2.1",
     "electron-context-menu": "^3.6.1",
+    "electron-squirrel-startup": "^1.0.0",
     "electron-store": "^8.1.0",
     "express": "^4.18.2",
     "express-fileupload": "^1.4.0",
@@ -43,7 +45,11 @@
     "electron": "cross-env NODE_ENV=dev nodemon --exec \"\"electron .\"\"",
     "electron-build": "electron-builder",
     "package-win": "electron-packager . POS --overwrite --asar=false --platform=win32 --arch=x64 --icon=assets/images/icon.ico --prune=true --out=release-builds --version-string.ProductName=\"POS\"",
-    "create-installer-win": "node installers/windows/createinstaller.js"
+    "create-installer-win": "node installers/windows/createinstaller.js",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
   },
   "browserslist": {
     "production": [
@@ -58,12 +64,15 @@
     ]
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "@electron-forge/publisher-github": "^6.0.4",
     "cross-env": "^7.0.3",
     "electron": "^22.0.0",
-    "electron-builder": "^23.6.0",
     "electron-is-dev": "^2.0.0",
-    "electron-packager": "^17.1.1",
-    "electron-winstaller": "^5.1.0",
     "nodemon": "^1.19.3"
   }
 }

@@ -1,6 +1,5 @@
-
-# Store Point of Sale
-![GitHub all releases](https://img.shields.io/github/downloads/drkNsubuga/electron-pos/total) ![GitHub repo size](https://img.shields.io/github/repo-size/drkNsubuga/electron-pos) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/drkNsubuga/electron-pos/.github/workflows/build.yml) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/drkNsubuga/electron-pos) ![GitHub](https://img.shields.io/github/license/drkNsubuga/electron-pos)
+# Electron Point of Sale
+![GitHub all releases](https://img.shields.io/github/downloads/drkNsubuga/electron-pos/total) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/drkNsubuga/electron-pos/.github/workflows/build.yml) ![GitHub](https://img.shields.io/github/license/drkNsubuga/electron-pos)
 
  Desktop Point of Sale app built with electron
  
@@ -26,19 +25,18 @@
 - Alert for expiration date
 - New styling and fix display issues  
 
-
 **Usage**
 - Clone this project.
 - Open terminal and navigate into the cloned folder.
 - Run "npm install"to install dependencies.
 - Run "npm run electron".
 
-![Screenshot 1](https://github.com/ailakhdar/Store-POS/blob/master/screenshots/2.jpg)
+![Screenshot 1](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/2.jpg)
 
-![Screenshot 2](https://github.com/ailakhdar/Store-POS/blob/master/screenshots/transaction.JPG)
+![Screenshot 2](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/transaction.JPG)
 
-![Screenshot 3](https://github.com/ailakhdar/Store-POS/blob/master/screenshots/5.jpg)
+![Screenshot 3](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/5.jpg)
 
-![Screenshot 4](https://github.com/ailakhdar/Store-POS/blob/master/screenshots/4.jpg)
+![Screenshot 4](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/4.jpg)
 
-![Screenshot 5](https://github.com/ailakhdar/Store-POS/blob/master/screenshots/alert.JPG)
+![Screenshot 5](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/alert.JPG)

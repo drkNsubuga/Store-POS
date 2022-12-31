@@ -11,6 +11,9 @@ const path = require('path');
 
 const contextMenu = require('electron-context-menu');
 
+// handle squirrel events
+if (require('electron-squirrel-startup')) app.quit();
+
 let mainWindow
 
 function createWindow() {
