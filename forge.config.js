@@ -10,7 +10,9 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        "name": "store-pos"
+      },
     },
     {
       name: '@electron-forge/maker-zip',
@@ -31,7 +33,7 @@ module.exports = {
           "config": {
             "repository": {
               "owner": "drkNsubuga",
-              "name": "electron-pos",
+              "name": "Store-POS",
               "draft": true
             }
           }

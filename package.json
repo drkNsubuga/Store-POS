@@ -1,8 +1,9 @@
 {
-  "name": "Electron-POS",
+  "name": "Store-POS",
+  "productName": "store-pos",
   "version": "1.1.1",
-  "description": "Electron Point of Sale",
-  "author": "Nsubuga Derrick",
+  "description": "Store Point of Sale",
+  "author": "Hosting Domain",
   "license": "MIT",
   "private": true,
   "main": "start.js",

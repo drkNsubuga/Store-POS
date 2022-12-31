@@ -1,5 +1,5 @@
-# Electron Point of Sale
-![GitHub package.json version](https://img.shields.io/github/package-json/v/drkNsubuga/electron-pos) ![GitHub all releases](https://img.shields.io/github/downloads/drkNsubuga/electron-pos/total) [![Release](https://github.com/drkNsubuga/Electron-POS/actions/workflows/release.yml/badge.svg)](https://github.com/drkNsubuga/Electron-POS/actions/workflows/release.yml) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/drkNsubuga/electron-pos/.github/workflows/build.yml) ![GitHub](https://img.shields.io/github/license/drkNsubuga/electron-pos)
+# Store Point of Sale
+![GitHub package.json version](https://img.shields.io/github/package-json/v/drkNsubuga/Store-POS) ![GitHub all releases](https://img.shields.io/github/downloads/drkNsubuga/Store-POS/total) [![Release](https://github.com/drkNsubuga/Store-POS/actions/workflows/release.yml/badge.svg)](https://github.com/drkNsubuga/Store-POS/actions/workflows/release.yml) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/drkNsubuga/Store-POS/.github/workflows/build.yml) ![GitHub](https://img.shields.io/github/license/drkNsubuga/Store-POS)
 
  Desktop Point of Sale app built with electron
  
@@ -31,12 +31,12 @@
 - Run "npm install"to install dependencies.
 - Run "npm run electron".
 
-![Screenshot 1](https://github.com/drkNsubuga/Electron-POS/blob/master/screenshots/2.jpg)
+![Screenshot 1](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/2.jpg)
 
-![Screenshot 2](https://github.com/drkNsubuga/Electron-POS/blob/master/screenshots/transaction.JPG)
+![Screenshot 2](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/transaction.JPG)
 
-![Screenshot 3](https://github.com/drkNsubuga/Electron-POS/blob/master/screenshots/5.jpg)
+![Screenshot 3](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/5.jpg)
 
-![Screenshot 4](https://github.com/drkNsubuga/Electron-POS/blob/master/screenshots/4.jpg)
+![Screenshot 4](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/4.jpg)
 
-![Screenshot 5](https://github.com/drkNsubuga/Electron-POS/blob/master/screenshots/alert.JPG)
+![Screenshot 5](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/alert.JPG)
