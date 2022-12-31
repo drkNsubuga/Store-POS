@@ -6,6 +6,7 @@ const async = require("async");
 const fileUpload = require('express-fileupload');
 const multer = require("multer");
 const fs = require('fs');
+const sanitize = require('sanitize-filename');
 
 
 const storage = multer.diskStorage({
@@ -77,7 +78,7 @@ app.post("/product", upload.single('imagename'), function (req, res) {
     if (req.body.remove == 1) {
         const path = './resources/app/public/uploads/product_image/' + req.body.img;
         try {
-            fs.unlinkSync(path)
+            fs.unlinkSync(sanitize(path))
         } catch (err) {
             console.error(err)
         }
