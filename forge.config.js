@@ -27,7 +27,7 @@ module.exports = {
           "config": {
             "repository": {
               "owner": "drkNsubuga",
-              "name": "electron-publish-example",
+              "name": "electron-pos",
               "draft": true
             }
           }
