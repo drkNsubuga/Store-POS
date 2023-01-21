@@ -2,9 +2,19 @@ let express = require("express"),
   http = require("http"),
   app = require("express")(),
   server = http.createServer(app),
-  bodyParser = require("body-parser");
+  bodyParser = require("body-parser"),
+  RateLimit = require('express-rate-limit');
 
-const PORT = process.env.PORT || 8001;
+  const PORT = process.env.PORT || 8001;
+
+  //set up rate limiter: maximum of five requests per minute
+  var limiter = RateLimit({
+    windowMs: 1*60*1000, // 1 minute
+    max: 10
+  }); 
+
+  // apply rate limiter to all requests
+  app.use(limiter);
 
 console.log("Server started");
 app.use(bodyParser.json());
@@ -35,5 +45,6 @@ app.use("/api/categories", require("./api/categories"));
 app.use("/api/settings", require("./api/settings"));
 app.use("/api/users", require("./api/users"));
 app.use("/api", require("./api/transactions"));
+
 
 server.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));

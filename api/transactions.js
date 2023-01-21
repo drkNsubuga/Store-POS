@@ -3,6 +3,15 @@ let server = require("http").Server(app);
 let bodyParser = require("body-parser");
 let Datastore = require("nedb");
 let Inventory = require("./inventory");
+// set up rate limiter: maximum of five requests per minute
+var RateLimit = require('express-rate-limit');
+var limiter = new RateLimit({
+  windowMs: 1*60*1000, // 1 minute
+  max: 5
+});
+
+
+app.use(limiter);
 
 app.use(bodyParser.json());
 

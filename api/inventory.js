@@ -7,7 +7,15 @@ const fileUpload = require('express-fileupload');
 const multer = require("multer");
 const fs = require('fs');
 const sanitize = require('sanitize-filename');
+// set up rate limiter: maximum of five requests per minute
+var RateLimit = require('express-rate-limit');
+var limiter = new RateLimit({
+  windowMs: 1*60*1000, // 1 minute
+  max: 5
+});
 
+
+app.use(limiter);
 
 const storage = multer.diskStorage({
     destination: process.env.APPDATA + '/POS/uploads',
