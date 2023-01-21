@@ -7,6 +7,7 @@ const fileUpload = require('express-fileupload');
 const fs = require('fs');
 const path = require('path');
 var RateLimit = require('express-rate-limit');
+var sanitize = require("sanitize-filename");
 
 var limiter = RateLimit({
   windowMs: 1*60*1000, // 1 minute
@@ -16,7 +17,7 @@ var limiter = RateLimit({
 app.use(limiter);
 
 const storage = multer.diskStorage({
-    destination:  path.join(process.env.APPDATA,'POS','uploads'),
+    destination:  sanitize(path.join(process.env.APPDATA,'POS','uploads')),
     filename: function(req, file, callback){
         callback(null, Date.now() + '.jpg'); // 
     }
@@ -30,7 +31,7 @@ module.exports = app;
 
  
 let settingsDB = new Datastore( {
-    filename: path.join(process.env.APPDATA,"POS","server","databases","settings.db"),
+    filename: sanitize(path.join(process.env.APPDATA,"POS","server","databases","settings.db")),
     autoload: true
 } );
 
@@ -64,7 +65,7 @@ app.post( "/post", upload.single('imagename'), function ( req, res ) {
     }
 
     if(req.body.remove == 1) {
-        const imgPath = path.join(process.env.APPDATA,"POS","uploads",req.body.img);
+        const imgPath = sanitize(path.join(process.env.APPDATA,"POS","uploads",req.body.img));
         try {
           fs.unlinkSync(imgPath)
         } catch(err) {
