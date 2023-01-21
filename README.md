@@ -16,9 +16,6 @@
 - Transaction History. 
 - Filter Transactions by Till, Cashier or Status. 
 - Filter Transactions by Date Range. 
-
-**Features Added to the original version :**
-
 - Custom barcode  
 - Product Expiry date 
 - Calculate profit per item and total profit
@@ -28,8 +25,8 @@
 **Usage**
 - Clone this project.
 - Open terminal and navigate into the cloned folder.
-- Run "npm install"to install dependencies.
-- Run "npm run electron".
+- Run ```npm install``` to install dependencies.
+- Run ```npm run electron```.
 
 ![Screenshot 1](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/2.jpg)
 
