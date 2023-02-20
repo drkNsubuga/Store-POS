@@ -20,7 +20,6 @@
 - Product Expiry date 
 - Calculate profit per item and total profit
 - Alert for expiration date
-- New styling and fix display issues  
 
 **Usage**
 - Clone this project.
@@ -28,12 +27,6 @@
 - Run ```npm install``` to install dependencies.
 - Run ```npm run electron```.
 
-![Screenshot 1](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/2.jpg)
-
-![Screenshot 2](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/transaction.JPG)
-
-![Screenshot 3](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/5.jpg)
-
-![Screenshot 4](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/4.jpg)
-
-![Screenshot 5](https://github.com/drkNsubuga/Store-POS/blob/master/screenshots/alert.JPG)
+## Credits
+Cloned from https://github.com/ailakhdar/Store-POS with major improvements
+Original fork from https://github.com/ailakhdar/Store-POS
